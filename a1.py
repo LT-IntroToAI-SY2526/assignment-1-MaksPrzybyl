@@ -1,145 +1,161 @@
-"""Assignment 1
+"""
+MY ORIGINAL AI PROMPT:
+[Paste the prompt you used to generate your problem set here]
+I'm learning python in a high school programming class. I have some past experience with Python. 
+Can you create 5 practice problems that cover: 
+> - Variables and basic data types 
+> - Conditionals (if/elif/else) 
+> - Loops (for and while) 
+> - Functions > - Basic list operations
+ Make them progressively more challenging. Make sure each problem has clear instructions and example inputs/outputs.
 
-Fill in the following function skeletons - descriptions are provided in 
-the docstring (the triple quote thing at the top of each function)
-
-Some assert statements have been provided - write more of them to test your code!
-
-The `raise NotImplementedError(...)`s are placeholders to help you not skip implementing
-a function. They should be removed and replaced with your solution.
-
-This portion of the assignment will not be graded, but this gives you some problems to 
-check and we'll be doing them in class.
-
-Make sure to complete the a1.py problems which should be AI generated.
+Example: "I'm learning Python basics in a high school programming class. 
+I have some experience with Java. Can you create 5-7 practice problems that cover..."
 """
 
-from typing import List, TypeVar
+# =============================================================================
+# PART 2: AI-GENERATED PROBLEMS & SOLUTIONS
+# =============================================================================
+
+"""
+PROBLEM 1: [Problem Title/Description]
+[Copy the complete problem description from your AI assistant]
+1. Variables & Basic Data Types – Age Calculator
+
+Task:
+Ask the user for their name and birth year. Assume the current year is 2025.
+Calculate their age and print:
+
+Hello [name], you are [age] years old.
 
 
-def absolute(n: int) -> int:
-    """Gives the absolute value of the passed in number. Cannot use the built in
-    function `abs`.
+Example:
 
-    Args:
-        n - the number to take the absolute value of
+Input:
+Name: Mia
+Birth Year: 2010
 
-    Returns:
-        the absolute value of the passed in number
-    """
-    if n < 0:
-        return -1 * n
-    else:
-        return n
+Output:
+Hello Mia, you are 15 years old.
 
+2. Conditionals – Number Checker
 
-def factorial(n: int) -> int:
-    """Takes a number n, and computes the factorial n! You can assume the passed in
-    number will be positive
+Task:
+Ask the user for an integer.
 
-    Args:
-        n - the number to compute factorial of
+If it’s positive, print "Positive".
 
-    Returns:
-        factorial of the passed in number
-    """
-    raise NotImplementedError("factorial")
+If it’s negative, print "Negative".
 
+If it’s zero, print "Zero".
+If the number is even, also print "Even". If odd, print "Odd".
 
-T = TypeVar("T")
+Example:
+Problem: Write a function called 'is_even' that takes an integer and returns 
+True if the number is even, False if it's odd.
 
+Example inputs/outputs:
+- is_even(4) should return True
+- is_even(7) should return False
+Input: -4
+Output:
+Negative
+Even
 
-def every_other(lst: List[T]) -> List[T]:
-    """Takes a list and returns a list of every other element in the list, starting with
-    the first.  
+3. Loops – Sum of Multiples
 
-    Args:
-        lst - a list of any (constrained by type T to be the same type as the returned
-            list)
+Task:
+Ask the user for a number n.
+Use a for loop to find the sum of all numbers between 1 and n that are multiples of 3 or 5.
+Print the sum.
 
-    Returns:
-        a list of every of other item in the original list starting with the first
-    """
-    return lst[::2]
+Example:
 
-
-def sum_list(lst: List[int]) -> int:
-    """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
-    use the built in function `sum`.
-
-    Args:
-        lst - a list of numbers
-
-    Returns:
-        the sum of the passed in list
-    """
-    return sum_list(lst)/len(lst)
+Input: 10
+Output: 33
 
 
-def mean(lst: List[int]) -> float:
-    """Takes a list of numbers, and returns the mean of the numbers.
+(Explanation: 3 + 5 + 6 + 9 + 10 = 33)
 
-    Args:
-        lst - a list of numbers
+4. Functions – Temperature Converter
 
-    Returns:
-        the mean of the passed in list
-    """
-    return sum_list(lst) / len(lst) if lst else 0
+Task:
+Write a function c_to_f(celsius) that converts Celsius to Fahrenheit using:
+
+F = (C × 9/5) + 32
 
 
-def median(lst: List[int]) -> float:
-    """Takes an ordered list of numbers, and returns the median of the numbers.
+Ask the user for a Celsius temperature, call the function, and print the result.
 
-    If the list has an even number of values, it computes the mean of the two center
-    values.
+Example:
 
-    Args:
-        lst - an ordered list of numbers
+Input: 0
+Output: 32.0
 
-    Returns:
-        the median of the passed in list
-    """
-    if len(lst) % 2 == 1:
-        return lst[len(lst) // 2]
-    else:
-        return (lst[len(lst)] + lst[len(lst) // 2 -1])/2
+Input: 100
+Output: 212.0
+
+5. Lists – Average & Largest Finder
+
+Task:
+
+Ask the user to enter 5 numbers (space-separated).
+
+Store them in a list.
+
+Print the average of the numbers.
+
+Print the largest number.
+
+Example:
+
+Input: 4 8 15 16 23
+Output:
+Average: 13.2
+Largest: 23
+"""
+
+print("Testing Problem 1:")
+# Add your tests here
+name = input("what is your name ")
+birth = int(input("what year were you born "))
+age = 2025 - birth
+print(f"Hello {name} you are {age} years old")
+
+print("\nTesting Problem 2:")
+# Add your tests here
+num=int(input("Number:"))
+
+print("\nTesting Problem 3:")
+# Add your tests here
+if num > 0:
+    print("positive")
+
+elif num < 0:
+    print("negative")
+else:
+    print("zero")
+
+if num % 2 == 0:
+    print("even")
+else:
+    print("odd")
+
+print("\nTesting Problem 3:")
+n=int(input("Number:"))
+for v in range(1,n):
+    print(v)
+print("\nTesting Problem 4:")
+# Add your tests here
+cel = int(input("Temperature in Celsius:"))
+far = (cel * 9/5)+32
+print(far)
 
 
-def duck_duck_goose(lst: List[str]) -> List[str]:
-    """Given an list of names (strings), play 'duck duck goose' with it, knocking out
-    every third name (wrapping around) until only two names are left.
-
-    In other words, when you hit the end of the list, wrap around and keep counting from
-    where you were.
-
-    For example, if given this list ["roscoe", "kim", "woz", "solin"], you'd first
-    knock out woz. Then first 'duck' on solin, wrap around to 'duck' on roscoe and
-    'goose' on kim - knocking him out and leaving only roscoe and solin.
-
-    You may assume the list has 3+ names to start
-
-    Args:
-        lst - a list of names (strings)
-
-    Returns:
-        the resulting list after playing duck duck goose
-    """
-
-# this line causes the nested code to be skipped if the file is imported instead of run
-if __name__ == "__main__":
-    assert absolute(-1) == 1, "absolute of -1 failed"
-    assert factorial(4) == 24, "factorial of 4 failed"
-    assert every_other([1, 2, 3, 4, 5]) == [
-        1,
-        3,
-        5,
-    ], "every_other of [1,2,3,4,5] failed"
-    assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
-    assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
-    assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
-
-    names = ["roscoe", "kim", "woz", "solin", "law", "remess"], "failed duck duck goose 1"
-    assert duck_duck_goose(names) == ["roscoe", "law"], "failed duck duck goose 2"
-
-    print("All tests passed!")
+print("\nTesting Problem 5:")
+# Add your tests here
+nums = list(map(float, input("Enter 5 numbers: ").split()))
+average = sum(nums) / len(nums)
+largest = max(nums)
+print(f"Average: {average}")
+print(f"Largest: {largest}")
