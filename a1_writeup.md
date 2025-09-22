@@ -17,9 +17,11 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 After completing your problems, reflect on:
 
 1. **What was your initial experience with Python?** How did it compare to other programming languages you've used?
+I took Media Comp last year, it was similar to other langueges, but had a very specific structure.
 
 2. **How did you use AI effectively?** Give specific examples of good prompts you used and what you learned from the responses.
-
+I didn't use AI for my programming class last year.
 3. **What concepts were most challenging?** How did AI help you understand them?
-
+What was most challenging was figuring out how to code multiple actions at once, without them interfering with each other
 4. **What did you learn about collaborating with AI?** What strategies worked best for learning rather than just getting answers?
+N/A
