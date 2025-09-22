@@ -20,12 +20,12 @@ Remember: The goal is to **learn programming** while building **AI collaboration
 | Criteria | Points Possible | Points Earned | Comments |
 |----------|----------------|---------------|----------|
 | **Programming Completion** | | | |
-| a1.py Functions Complete | 3 | | |
-| a1_practice_problems.py Complete | 3 | | |
+| a1.py Functions Complete | 3 | 3 | |
+| a1_practice_problems.py Complete | 3 | 2.5 | duck duck goose wasn't completed and it appears that you started to write another assert, but didn't finish. |
 | **Reflection & Learning** | | | |
-| AI Collaboration Process | 2 | | |
-| Learning Reflection Quality | 2 | | |
-| **TOTAL** | **10** | | |
+| AI Collaboration Process | 2 | 0 | |
+| Learning Reflection Quality | 2 | 0 | None of the questions were answered, maybe you didn't push the answers to github? |
+| **TOTAL** | **10** | 5.5 | |
 
 ---
 
