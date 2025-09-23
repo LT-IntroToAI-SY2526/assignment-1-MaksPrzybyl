@@ -20,8 +20,8 @@ After completing your problems, reflect on:
 I took Media Comp last year, it was similar to other langueges, but had a very specific structure.
 
 2. **How did you use AI effectively?** Give specific examples of good prompts you used and what you learned from the responses.
-I didn't use AI for my programming class last year.
+I used it to give me questions, and assistt me with figuring out the answers.
 3. **What concepts were most challenging?** How did AI help you understand them?
-What was most challenging was figuring out how to code multiple actions at once, without them interfering with each other
+What was most challenging was figuring out how to do averages. I used AI to make some sample problems to help me figure out the method.
 4. **What did you learn about collaborating with AI?** What strategies worked best for learning rather than just getting answers?
-N/A
+I learned how to use it for assistance, not answers. Giving example problems worked best for learning.
